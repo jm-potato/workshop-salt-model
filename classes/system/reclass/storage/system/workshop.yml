@@ -5,14 +5,12 @@ parameters:
         ctl01.potato.lp:
           name: ctl01
           domain: potato.lp
-          timezone: UTC
           classes:
           - system.linux.system.single
           - system.openstack.control.workshop
           - service.galera.master.cluster
           - system.linux.system.lowmem
           params:
-            timezone: UTC
             salt_master_host: ${_param:reclass_config_master}
             single_address: 10.100.0.101
             keepalived_vip_interface: eth0
