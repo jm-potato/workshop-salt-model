@@ -5,6 +5,7 @@ parameters:
         ctl01.potato.lp:
           name: ctl01
           domain: potato.lp
+          timezone: UTC
           classes:
           - system.linux.system.single
           - system.openstack.control.workshop

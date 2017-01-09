@@ -14,13 +14,13 @@ parameters:
   openssh:
     server:
       permit_root_login: true
-#      password_auth: true
-#      user:
-#        root:
-#          enabled: true
-#          user: ${linux:system:user:root}
-#          public_keys:
-#          - ${public_keys:root}
-#  public_keys:
-#    root:
-#      key: your key here
+      password_auth: false
+      user:
+        root:
+          enabled: true
+          user: ${linux:system:user:root}
+          public_keys:
+          - ${public_keys:root}
+  public_keys:
+    root:
+      key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDSVsHJYzG3e22fCp656lzXHcd1xtWobTXcMTVjxHCrLu11RrAgYuTqPODIEnryM2wM49FoZWmNINeQQyS8QkcRVZD4UWzYwJ9H2zf+U/HOn0dWR4rQii32Yzlb9NApRtPZgfdhM18nBSIhvb2+ry6TJrQCxH3oemQcBrsJsNjLxygZUtu8dJTtHaglB4ZN8A0WnU9pUHBCzWc4VatRhLWvBpoEJyGHTdK+OjWBGgctYKF4udmbqyN6hmo2z3KLhqCZaB/VlVIl11NDI6tFzYKoFIDeGHSgQIHAmJS4pdAdmgZ1Vuf2xhLEp62jDRDnMfXsX2xS7ugxKuHcIbk3456GxFWG7D9wBmpDa9Tw2hKWFBIfrlkjYjR40zlkPUFfAotyUQrGc69yaU+plA+fn+uTzeDK6yRo0yzow8+EgNpF5W3tAyIfUl5YJRAB7aAoox5El0t47btILN7qnM/2yExBPiqnpo2455Qz5wSPYDGu3RPTYqEEP2ZiNy+B1of2P1JusofJRQ6rl9PC7Dj6/nP4T9ytRJW+wQ3MaPv9sXGpkxKmyiRvIjU4Uj8wuxbI4h76GGvdhiVIUVkZhG658WZI46Ix+nIFhZQiB4sXUepmnHQWQEK5iDJVzb/Id86WpKRSrdSAF+kfB2F8N7HOBgoOkM7CJJYqS+TkNB8zBNMKrw==
