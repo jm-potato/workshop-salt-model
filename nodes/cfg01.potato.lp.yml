@@ -16,7 +16,7 @@ classes:
 - system.openstack.proxy.workshop
 parameters:
   _param:
-    reclass_data_repository: "https://github.com/tcpcloud/workshop-salt-model.git"
+    reclass_data_repository: "https://github.com/jm-potato/workshop-salt-model.git"
     reclass_data_revision: master
     reclass_config_master: 172.16.10.100
     single_address: 172.16.10.100
@@ -29,7 +29,7 @@ parameters:
   linux:
     system:
       name: cfg01
-      domain: workshop.cloudlab.cz
+      domain: potato.lp
       repo:
         tcpcloud:
           source: "deb [arch=amd64] http://apt.tcpcloud.eu/testing/ trusty main security extra tcp tcp-salt liberty oc30 galera-s9s"
