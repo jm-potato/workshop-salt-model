@@ -30,6 +30,7 @@ parameters:
     system:
       name: cfg01
       domain: potato.lp
+      timezone: UTC
       repo:
         tcpcloud:
           source: "deb [arch=amd64] http://apt.tcpcloud.eu/testing/ trusty main security extra tcp tcp-salt liberty oc30 galera-s9s"
