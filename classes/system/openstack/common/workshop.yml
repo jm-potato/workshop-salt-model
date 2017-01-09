@@ -19,14 +19,14 @@ parameters:
     galera_server_cluster_name: openstack_cluster
     galera_server_maintenance_password: workshop
     galera_server_admin_password: workshop
-    cluster_vip_address: 172.16.10.254
+    cluster_vip_address: 10.100.0.254
     cluster_local_address: ${_param:single_address}
     cluster_node01_hostname: ctl01
-    cluster_node01_address: 172.16.10.101
+    cluster_node01_address: 10.100.0.101
     cluster_node02_hostname: ctl02
-    cluster_node02_address: 172.16.10.102
+    cluster_node02_address: 10.100.0.102
     cluster_node03_hostname: ctl03
-    cluster_node03_address: 172.16.10.103
+    cluster_node03_address: 10.100.0.103
     rabbitmq_secret_key: workshop
     rabbitmq_admin_password: workshop
     rabbitmq_openstack_password: workshop
@@ -39,10 +39,10 @@ parameters:
     heat_service_host: ${_param:cluster_vip_address}
     heat_domain_admin_password: workshop
     ceilometer_version: kilo
-    ceilometer_service_host: 172.16.10.108
+    ceilometer_service_host: 10.100.0.108
     cinder_version: kilo
     cinder_service_host: ${_param:cluster_vip_address}
-    ceilometer_graphite_publisher_host: 172.16.10.107
+    ceilometer_graphite_publisher_host: 10.100.0.107
     ceilometer_graphite_publisher_port: 2013
     nova_version: kilo
     nova_service_host: ${_param:cluster_vip_address}
@@ -97,32 +97,32 @@ parameters:
           - ${_param:cluster_node03_hostname}
           - ${_param:cluster_node03_hostname}.potato.lp
         web01:
-          address: 172.16.10.104
+          address: 10.100.0.104
           names:
           - web01
           - web01.potato.lp
         cmp01:
-          address: 172.16.10.105
+          address: 10.100.0.105
           names:
           - cmp01
           - cmp01.potato.lp
         cmp02:
-          address: 172.16.10.106
+          address: 10.100.0.106
           names:
           - cmp02
           - cmp02.potato.lp
         mon01:
-          address: 172.16.10.107
+          address: 10.100.0.107
           names:
           - mon01
           - mon01.potato.lp
         mtr01:
-          address: 172.16.10.108
+          address: 10.100.0.108
           names:
           - mtr01
           - mtr01.potato.lp
         log01:
-          address: 172.16.10.110
+          address: 10.100.0.110
           names:
           - log01
           - log01.potato.lp
